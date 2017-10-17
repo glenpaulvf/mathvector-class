@@ -10,7 +10,7 @@ class MathVector:
 			dim = dimensions[0]
 			if type(dim) == int:
 				self.components = [0, 0, 0, 0, 0]
-			elif type(dim) == list:
+			elif type(dim) == list or type(dim) == tuple:
 				for d in dim:
 					self.components.append(d)
 		else:
