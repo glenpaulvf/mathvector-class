@@ -23,3 +23,6 @@ class MathVector:
 			if i == index - 1:
 				return self.components[i]
 
+	def neg(self):
+		return [-x for x in self.components]
+
