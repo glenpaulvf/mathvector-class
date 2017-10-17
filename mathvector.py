@@ -26,7 +26,7 @@ class MathVector:
 				return self.components[i]
 
 	def neg(self):
-		return [-x for x in self.components]
+		return MathVector([-x for x in self.components])
 
 	def mag(self):
 		return math.sqrt(sum(map(lambda x: x*x, self.components)))
@@ -35,8 +35,11 @@ class MathVector:
 		return sum([x * y for x, y in zip(self.components, other.components)])
 
 	def plus(self, other):
-		return [x + y for x, y in zip(self.components, other.components)]
+		return MathVector([x + y for x, y in zip(self.components, other.components)])
 
 	def sp(self, scalar):
-		return [x * scalar for x in self.components]
+		return MathVector([x * scalar for x in self.components])
+
+	def print_me(self):
+		return self.components
 
