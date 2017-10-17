@@ -2,6 +2,8 @@
 # COMPTNG16
 # October 18, 2017
 
+import math
+
 class MathVector:
 
 	def __init__(self, *dimensions):
@@ -25,4 +27,7 @@ class MathVector:
 
 	def neg(self):
 		return [-x for x in self.components]
+
+	def mag(self):
+		return math.sqrt(sum(map(lambda x: x*x, self.components)))
 
