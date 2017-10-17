@@ -31,3 +31,6 @@ class MathVector:
 	def mag(self):
 		return math.sqrt(sum(map(lambda x: x*x, self.components)))
 
+	def dot (self, other):
+		return sum([x*y for x, y in zip(self.components, other.components)])
+
