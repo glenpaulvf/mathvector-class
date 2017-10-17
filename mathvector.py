@@ -17,3 +17,9 @@ class MathVector:
 			for d in dimensions:
 				self.components.append(d)
 
+	def get_el(self, index):
+	# returns the i-th component of the vector
+		for i in range(len(self.components)):
+			if i == index - 1:
+				return self.components[i]
+
