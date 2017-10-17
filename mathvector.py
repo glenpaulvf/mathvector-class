@@ -37,3 +37,6 @@ class MathVector:
 	def plus(self, other):
 		return [x + y for x, y in zip(self.components, other.components)]
 
+	def sp(self, scalar):
+		return [x * scalar for x in self.components]
+
