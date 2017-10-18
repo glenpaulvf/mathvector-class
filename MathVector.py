@@ -41,5 +41,5 @@ class MathVector:
 		return MathVector([x * scalar for x in self.components])
 
 	def print_me(self):
-		return self.components
+		print self.components
 
