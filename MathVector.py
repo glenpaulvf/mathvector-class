@@ -2,7 +2,7 @@
 # COMPTNG16
 # October 18, 2017
 
-import math
+from math import sqrt
 
 class MathVector:
 
@@ -29,7 +29,7 @@ class MathVector:
 		return MathVector([-x for x in self.components])
 
 	def mag(self):
-		return math.sqrt(sum(map(lambda x: x*x, self.components)))
+		return sqrt(sum(map(lambda x: x*x, self.components)))
 
 	def dot(self, other):
 		return sum([x * y for x, y in zip(self.components, other.components)])
