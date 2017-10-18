@@ -55,3 +55,8 @@ class MathVector:
     def __abs__(self):
         return self.mag()
 
+    def __mul__(self, other):
+        if type(other) == int or type(other) == float:
+            return self.sp(other)
+        else:
+            return self.dot(other)
