@@ -46,3 +46,6 @@ class MathVector:
     def __str__(self):
         return str(self.components)
 
+    def __getitem__(self, key):
+        return self.get_el(key)
+
