@@ -60,3 +60,6 @@ class MathVector:
             return self.sp(other)
         else:
             return self.dot(other)
+    
+    def __rmul__(self, other):
+        return self.sp(other)
