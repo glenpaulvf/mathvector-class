@@ -63,3 +63,6 @@ class MathVector:
     
     def __rmul__(self, other):
         return self.sp(other)
+
+    def __add__(self, other):
+        return self.plus(other)
