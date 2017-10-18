@@ -52,3 +52,6 @@ class MathVector:
     def __neg__(self):
         return self.neg()
 
+    def __abs__(self):
+        return self.mag()
+
