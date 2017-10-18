@@ -49,3 +49,6 @@ class MathVector:
     def __getitem__(self, key):
         return self.get_el(key)
 
+    def __neg__(self):
+        return self.neg()
+
