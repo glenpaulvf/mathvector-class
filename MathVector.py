@@ -32,7 +32,7 @@ class MathVector:
         return sqrt(sum(map(lambda x: x*x, self.components)))
 
     def dot(self, other):
-        return sum([x * y for x, y in zip(self.components, other.components)])
+        return sum(x * y for x, y in zip(self.components, other.components))
 
     def plus(self, other):
         return MathVector([x + y for x, y in zip(self.components, other.components)])
