@@ -43,3 +43,6 @@ class MathVector:
     def print_me(self):
         print self.components
 
+    def __str__(self):
+        return str(self.components)
+
